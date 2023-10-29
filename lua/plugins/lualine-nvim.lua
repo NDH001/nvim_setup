@@ -14,13 +14,14 @@ local config = function()
 			globalstatus = true,
 		},
 		tabline = {
-			lualine_a = { "mode" },
+			lualine_a = { "branch" },
 			lualine_b = { "buffers" },
+      lualine_c = {'diff'},
 			lualine_x = { "encoding", "fileformat", "filetype" },
 			lualine_y = { "progress" },
-			lualine_z = { "location" },
 		},
-		sections = {},
+		sections = {
+    },
 	})
 end
 
